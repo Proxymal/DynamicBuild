@@ -1,6 +1,6 @@
 # About
 DynamicBuild is a .NET Framework Library for Dynamic Compilation &amp; Code Generation.
-Library offers multiple ways for compilation and generation.
+Library offers multiple ways for compilation and generation. WIP
 
 ### Compilation 
 You can compile these languages:
@@ -11,18 +11,14 @@ You can compile these languages:
   - With CodeDom (.NET)
 - VC++
   - With CodeDom (.NET)
-
-- C++/C
-  - With MinGW (not .NET) 
   
-- Javascript
+- JScript
   - With CodeDom (.NET)
 
 Code can be compiled to these platforms:
 - Windows (10/7/8.1 - x86, x64, arm, arm64, aot) 
-  - With CodeDomBuilders (C#/VB/VC++/JS) 
+  - With CodeDomBuilders (C#/VB/VC++/JScript) 
   - With DotNetBuilder (.NET Core C#/VB)
-  - With MinGW (C++/C) 
 - Linux (x86, x64, arm, arm64, musl) 
   - With DotNetBuilder (.NET Core C#/VB) 
 - macOS (x86, x64, arm, arm64) 
@@ -42,12 +38,9 @@ You can generate these languages code:
   - With CodeDom
 - VC++ code
   - With CodeDom
-- Javascript code
+- JScript code
   - With CodeDom
-- Lua code
-  - With VNet.CodeGen
-- IL code
-  - With System.Emit
+
 
   
 
