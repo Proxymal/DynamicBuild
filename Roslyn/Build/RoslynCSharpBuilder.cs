@@ -38,7 +38,7 @@ namespace DynamicBuild.Roslyn
             OverflowCheck = true;
             AllowUnsafe = false;
 
-            RuntimePath = $@"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\{netFrameworkVersion}\_REF_.dll";
+            RuntimePath = $@"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\{netFrameworkVersion}";
 
             DefaultNamespaces = new List<string>()
             {
@@ -52,9 +52,9 @@ namespace DynamicBuild.Roslyn
             };
             DefaultReferences = new List<MetadataReference>()
             {
-                MetadataReference.CreateFromFile(RuntimePath.Replace("_REF_", "mscorlib")),
-                MetadataReference.CreateFromFile(RuntimePath.Replace("_REF_", "System")),
-                MetadataReference.CreateFromFile(RuntimePath.Replace("_REF_", "System.Core"))
+                MetadataReference.CreateFromFile(RuntimePath + @"\mscorlib.dll"),
+                MetadataReference.CreateFromFile(RuntimePath + @"\System.dll"),
+                MetadataReference.CreateFromFile(RuntimePath + @"\System.Core.dll")
             };
         }
         public SyntaxTree ParseSyntax(string code, CSharpParseOptions options = null)
