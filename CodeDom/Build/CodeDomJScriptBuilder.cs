@@ -66,7 +66,7 @@ namespace DynamicBuild.CodeDom
         }
         public CompilerResults Build(string dirWithSrc)
         {
-            string[] sources = GetSourcesFromDir(dirWithSrc, new string[] { ".cs" });
+            string[] sources = GetSourcesFromDir(dirWithSrc, new string[] { ".js" });
 
             var csc = new JScriptCodeProvider();
 
